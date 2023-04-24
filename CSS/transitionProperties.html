@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 2px solid red;
+        background-color: aquamarine;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        font-size: larger;
+        font-variant: small-caps;
+
+        /* transition-property: width, height, background-color;
+        transition-duration: 2s, 4s, 6s; */
+
+        /* shorthand */
+        /* transition: width, height, background-color, 2s, 4s, 6s; */
+        transition: all, 1s;
+
+        /* shortHand  */
+        /* transition-property,transition-duration,transition-timing-function,transition-delay */
+
+        /* transition-timing-function: steps(6); */
+        transition-timing-function: linear;
+        transition-delay: 2s;
+      }
+      /* .box:hover {
+        width: 300px;
+        height: 500px;
+        background-color: yellow;
+      } */
+      @media only screen and (max-width: 960px) {
+        .box {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello pankaj</div>
+  </body>
+</html>
